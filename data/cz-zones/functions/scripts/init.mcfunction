@@ -25,6 +25,7 @@ tellraw @a [{"text":"Protected Zones by Code_Zealot installed and running","colo
 
 #Init Settings
 scoreboard players set $cz-zones-reload-menu cz_bool 1
+scoreboard players set $cz-zones-particles cz_bool 1
 
 #Initialized = true
 scoreboard players set $cz-zones-init cz_bool 1

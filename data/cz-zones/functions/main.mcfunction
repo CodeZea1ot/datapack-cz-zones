@@ -65,3 +65,7 @@ execute as @a at @s if entity @e[tag=cz_zone_1000,distance=..1000] run tag @s ad
 #set to adventure
 execute as @a[gamemode=!creative,gamemode=!spectator] at @s if entity @e[tag=cz_zone_5000,distance=..5000] run gamemode adventure @s
 execute as @a at @s if entity @e[tag=cz_zone_5000,distance=..5000] run tag @s add in_cz_zone
+
+
+#Run zone_particles.mcfunction, if setting enabled
+execute if score $cz-zones-particles cz_bool matches 1 run function cz-zones:settings/run_particles

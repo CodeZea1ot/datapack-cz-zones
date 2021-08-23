@@ -1,0 +1,2 @@
+function cz-zones:gui/line_break
+tellraw @s {"text":"[ Return to Menu ]","color":"dark_purple","clickEvent":{"action":"run_command","value":"/execute as @s at @s run function cz-zones:menu"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to open the menu","color":"dark_purple"}]}}
